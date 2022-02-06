@@ -1,0 +1,18 @@
+{
+  "last_trip": "Last Trip",
+  "country": "Country:",
+  "from" : "from:",
+  "to": "to:",
+  "recent_trips": "Recent Trips:",
+  "tools": "Tools:",
+  "actions_trip": "Use a Trip to:",
+  "actions_product": "Use a Product to:",
+  "edit": "Edit",
+  "share": "Share",
+  "export": "Export",
+  "import": "Import",
+  "balance" : "Do the math:",
+  "explore_balance" : "Explore the advanced options to control your expenses",
+  "balance_options" : "Balance options:",
+  "rights": "All rights reserved"
+}
