@@ -68,64 +68,68 @@ class TripMiniItem extends StatelessWidget {
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
-        color: Theme.of(context).backgroundColor,
-        child: Padding(
-          padding: const EdgeInsets.all(5),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Opacity(
-                opacity: 0.8,
-                child: CircleAvatar(
-                  backgroundImage:
-                      Image.asset('./assets/flags/${trip.flag}.png').image,
+        color: Theme.of(context).indicatorColor,
+        child: InkWell(
+          onTap: () {},
+          borderRadius: const BorderRadius.all(Radius.circular(10)),
+          child: Padding(
+            padding: const EdgeInsets.all(5),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Opacity(
+                  opacity: 0.8,
+                  child: CircleAvatar(
+                    backgroundImage:
+                        Image.asset('./assets/flags/${trip.flag}.png').image,
+                  ),
                 ),
-              ),
-              Text(
-                trip.country,
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color:
-                        Theme.of(context).primaryTextTheme.titleMedium!.color),
-              ),
-              const Divider(),
-              Align(
-                alignment: Alignment.bottomRight,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(50),
-                  child: Material(
-                    color: Colors.transparent,
-                    child: InkWell(
-                      child: Padding(
-                        padding: EdgeInsets.zero,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const Icon(
-                              Icons.share_outlined,
-                              size: 20,
-                              color: Colors.white60,
-                            ),
-                            const SizedBox(
-                              width: 5,
-                            ),
-                            Text("share".tr().toUpperCase(),
-                            style: const TextStyle(
-                              fontSize: 12,
-                              color: Colors.white60
-                            ),
-                            ),
-                          ],
+                Text(
+                  trip.country,
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color:
+                          Theme.of(context).primaryTextTheme.titleLarge!.color),
+                ),
+                const Divider(),
+                Align(
+                  alignment: Alignment.bottomRight,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(50),
+                    child: Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        child: Padding(
+                          padding: EdgeInsets.zero,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(
+                                Icons.share_outlined,
+                                size: 20,
+                                color: Colors.white60,
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              Text("share".tr().toUpperCase(),
+                              style: const TextStyle(
+                                fontSize: 12,
+                                color: Colors.white60
+                              ),
+                              ),
+                            ],
+                          ),
                         ),
+                        onTap: () {},
                       ),
-                      onTap: () {},
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

@@ -1,0 +1,18 @@
+{
+  "last_trip": "Último viaje",
+  "country": "País:",
+  "from" : "desde:",
+  "to": "hasta:",
+  "recent_trips": "Viajes Recientes:",
+  "tools": "Útiles:",
+  "actions_trip": "Usar un Viaje para:",
+  "actions_product": "Usar un Producto para:",
+  "edit": "Editar",
+  "share": "Compartir",
+  "export": "Exportar",
+  "import": "Importar",
+  "balance" : "Haz tus cuentas:",
+  "explore_balance" : "Explorar las opciones avanzadas para controlar tus gastos",
+  "balance_options" : "Opciones de balance:",
+  "rights": "Todos los derechos reservados"
+}

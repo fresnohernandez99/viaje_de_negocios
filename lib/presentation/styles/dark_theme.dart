@@ -36,6 +36,10 @@ final ThemeData DarkTheme = ThemeData(
     errorColor: const Color(0xffd32f2f),
     fontFamily: 'SFProRounded',
     primaryTextTheme: const TextTheme(
-      titleLarge: TextStyle(color: Color(0x80ffffff)),
-      titleMedium: TextStyle(color: Color(0x51ffffff)),
+      titleLarge: TextStyle(
+          color: Colors.white
+      ),
+      titleMedium: TextStyle(
+          color: Color(0x51ffffff)
+      ),
     ));

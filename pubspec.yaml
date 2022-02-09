@@ -38,6 +38,7 @@ dependencies:
   websafe_svg: ^2.1.0+1
   intl: ^0.17.0
   localize_and_translate: ^4.1.1
+  progress_state_button: ^1.0.4
 
 dev_dependencies:
   flutter_test:
@@ -70,8 +71,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/lang/en.json
+    - assets/lang/es.json
     - assets/stock.png
     - assets/last_trip_card_image.png
+    - assets/admin_exchange.png
     - assets/vdn_icon.png
     - assets/flags/
 

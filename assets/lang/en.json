@@ -14,5 +14,22 @@
   "balance" : "Do the math:",
   "explore_balance" : "Explore the advanced options to control your expenses",
   "balance_options" : "Balance options:",
-  "rights": "All rights reserved"
+  "rights": "All rights reserved",
+  "admin_exchange": "Exchanges Administration",
+  "admin_exchange_info": "Add and edit manually currents exchanges",
+  "show_c_prod": "Show product value in CUP",
+  "ex_update": "Update exchanges values from Internet",
+  "adv_info": "Advance Information",
+  "adv_info_desc": "Get full data of your expenses and rewards.",
+  "show_price_cup": "Show price with CUP",
+  "show_selling_price": "Show selling price",
+  "download": "Download",
+  "fail_download": "Fail download",
+  "correct_download": "Success download",
+  "downloading": "Downloading",
+  "manage": "Management",
+  "online": "Online",
+  "visual": "Visual",
+  "update_exchange": "Update exchange",
+  "update_exchange_info": "Get actual country exchanges for your trips"
 }

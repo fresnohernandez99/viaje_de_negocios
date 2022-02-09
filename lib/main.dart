@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:localize_and_translate/localize_and_translate.dart';
+import 'package:viaje_de_negocios/presentation/pages/balance/balance_menu.dart';
 import 'package:viaje_de_negocios/presentation/pages/create_product.dart';
 import 'package:viaje_de_negocios/presentation/pages/create_trip.dart';
 import 'package:viaje_de_negocios/presentation/pages/home/home.dart';
@@ -14,7 +15,7 @@ void main() async {
 
   await translator.init(
     localeType: LocalizationDefaultType.device,
-    languagesList: <String>['en'],
+    languagesList: <String>['en', 'es'],
     assetsDirectory: 'assets/lang/',
   );
 
@@ -48,6 +49,7 @@ class MyApp extends StatelessWidget {
       initialRoute: Home.routeName,
       routes: {
         Home.routeName: (context) => Home(),
+        BalanceMenu.routeName: (context) => BalanceMenu(),
         CreateProduct.routeName: (context) => const CreateProduct(),
         CreateTrip.routeName: (context) => const CreateTrip(),
         ProductGallery.routeName: (context) => const ProductGallery(),
