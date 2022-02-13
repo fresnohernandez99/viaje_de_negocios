@@ -31,5 +31,14 @@
   "online": "Online",
   "visual": "Visual",
   "update_exchange": "Update exchange",
-  "update_exchange_info": "Get actual country exchanges for your trips"
+  "update_exchange_info": "Get actual country exchanges for your trips",
+  "foreign_exchange": "Foreign Exchanges",
+  "custom_foreign_exchange": "Custom Foreign Exchanges",
+  "add": "Add",
+  "complete_form": "Please complete the form",
+  "create_exchange": "Create exchange:",
+  "put_coin_name": "Type the coin name:",
+  "put_coin_codename": "Select a coin code for download:",
+  "put_dollar_value": "Put the value of 1 USD with this coin:",
+  "coin": "Coin"
 }

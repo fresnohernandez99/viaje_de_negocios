@@ -1,17 +1,20 @@
 import 'package:meta/meta.dart';
 
 class Exchange {
-  @required
-  final int id;
+  //identifier
+  int id = 0;
 
+  //coin codename for localize it on internet
   @required
-  final String coin;
+  String coin;
 
+  //display text label
   @required
-  final String coinName;
+  String coinName;
 
+  //value of the equivalent of one dollar for the coin
   @required
-  final double oneDollarEquals;
+  double oneDollarEquals;
 
-  Exchange(this.id, this.coin, this.coinName, this.oneDollarEquals);
+  Exchange(this.coin, this.coinName, this.oneDollarEquals);
 }

@@ -12,7 +12,7 @@ class LastTrip extends StatefulWidget {
 class _LastTripState extends State<LastTrip> {
   String imageRoute= 'assets/last_trip_card_image.png';
 
-  Trip trip = Trip(0, "Russia", "12-feb-2022", "21-feb-2022", 'ru');
+  Trip trip = Trip(0, "Russia", "12-feb-2022", "21-feb-2022", 'ru', 1);
 
   @override
   Widget build(BuildContext context) {

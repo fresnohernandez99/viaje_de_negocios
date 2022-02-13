@@ -11,11 +11,11 @@ class TripList extends StatefulWidget {
 
 class _TripListState extends State<TripList> {
   var tripList = [
-    Trip(0, "Russia", "12-feb-2022", "21-feb-2022", 'ru'),
-    Trip(0, "Mexico", "12-mar-2022", "21-mar-2022", 'mx'),
-    Trip(0, "Panama", "12-apr-2022", "21-apr-2022", 'pa'),
-    Trip(0, "Nicaragua", "12-may-2022", "21-may-2022", 'ni'),
-    Trip(0, "Turkey", "12-jun-2022", "21-jun-2022", 'tr')
+    Trip(0, "Russia", "12-feb-2022", "21-feb-2022", 'ru', 1),
+    Trip(0, "Mexico", "12-mar-2022", "21-mar-2022", 'mx', 1),
+    Trip(0, "Panama", "12-apr-2022", "21-apr-2022", 'pa', 1),
+    Trip(0, "Nicaragua", "12-may-2022", "21-may-2022", 'ni', 1),
+    Trip(0, "Turkey", "12-jun-2022", "21-jun-2022", 'tr', 1)
   ];
 
   @override

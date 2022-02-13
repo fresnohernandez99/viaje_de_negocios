@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:localize_and_translate/localize_and_translate.dart';
+import 'package:viaje_de_negocios/presentation/pages/exchanges_admin/exchanges_admin.dart';
 
 import 'custom_progress_btn.dart';
 import 'labeled_checkbox.dart';
@@ -23,7 +24,8 @@ class _BalanceMenuState extends State<BalanceMenu> {
         tag: "balance",
         child: Scaffold(
           body: SafeArea(
-            child: SingleChildScrollView(
+            child:  SingleChildScrollView(
+              scrollDirection: Axis.vertical,
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Column(
@@ -50,7 +52,9 @@ class _BalanceMenuState extends State<BalanceMenu> {
                         ),
                         elevation: 3,
                         child: InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context, ExchangesAdmin.routeName);
+                          },
                           borderRadius:
                               const BorderRadius.all(Radius.circular(10)),
                           child: Padding(

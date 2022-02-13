@@ -4,6 +4,7 @@ import 'package:localize_and_translate/localize_and_translate.dart';
 import 'package:viaje_de_negocios/presentation/pages/balance/balance_menu.dart';
 import 'package:viaje_de_negocios/presentation/pages/create_product.dart';
 import 'package:viaje_de_negocios/presentation/pages/create_trip.dart';
+import 'package:viaje_de_negocios/presentation/pages/exchanges_admin/exchanges_admin.dart';
 import 'package:viaje_de_negocios/presentation/pages/home/home.dart';
 import 'package:viaje_de_negocios/presentation/pages/product_gallery.dart';
 import 'package:viaje_de_negocios/presentation/pages/trip_gallery.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
     bool isLightMode() {
       try {
         var brightness = SchedulerBinding.instance!.window.platformBrightness;
-        return brightness != Brightness.light;
+        return brightness == Brightness.light;
       } catch (e) {
         return true;
       }
@@ -50,6 +51,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Home.routeName: (context) => Home(),
         BalanceMenu.routeName: (context) => BalanceMenu(),
+        ExchangesAdmin.routeName: (context) => ExchangesAdmin(),
         CreateProduct.routeName: (context) => const CreateProduct(),
         CreateTrip.routeName: (context) => const CreateTrip(),
         ProductGallery.routeName: (context) => const ProductGallery(),
